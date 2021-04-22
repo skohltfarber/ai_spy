@@ -25,7 +25,7 @@ Here are the guidelines to help us keep in mind what our project needs to implem
  
 * Required Technology Stack
   * Gatsby / React
-  * Contentful database
+  * Firebase database
   * Sass for CSS
   * Git / GitHub
 * Optional
