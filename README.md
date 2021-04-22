@@ -1,12 +1,10 @@
 # Capstone Project
 
-## Project Sitemaps & Wireframes - due 4/5
-
-## Project Milestons Alpha Site - due 4/16
-
-## Project Milestons Beta Site - due 4/23
-
-## Project Milestons Final Site - due 4/29
+## Project Milestones, Outline and Due Dates
+1. Sitemaps & Wireframes - due 4/5
+1. Alpha Site - due 4/16
+1. Beta Site - due 4/23
+1. Final Site - due 4/29
 
 ### AI Spy: Using AI to help with Image Classification.
 
