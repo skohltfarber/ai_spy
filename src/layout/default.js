@@ -19,6 +19,7 @@ export default function Default({ children }) {
                     <meta name="robots" content="index, follow" />
 
                     <meta property="og:title" content="AI Spy" />
+                    <meta property="og:image" content={Logo} />
                     <meta property="og:description" content="AI Spy: Ask a computer to share what is in an object." />
                     <meta property="og:type" content="website" />
                 </Helmet>
