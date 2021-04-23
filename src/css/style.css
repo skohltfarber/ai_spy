@@ -1,0 +1,197 @@
+body {
+	background-color: #f2f2f2;
+	font-family: 'Pangolin', cursive;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #f2a7ad;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 a {
+	color: #f2a7ad;
+}
+
+p.header {
+	color: #f2778d;
+	width: 650px;
+}
+
+label {
+	color: #f2a7ad;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Column Layouts */
+
+.logo {
+	width: 75px;
+	height: 75px;
+}
+
+.top {
+	color: #f2778d;
+}
+
+ul.menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #f2a7ad;
+}
+
+ul.thumbnail {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #f2f2f2;
+}
+
+ul.subtotal {
+	display: inline-block;
+	float: none;
+}
+
+li.subtotal {
+	display: inline-block;
+	float: none;
+}
+
+li.menu {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: #f2778d;
+	text-align: center;
+	padding: 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #f2a7ad;
+}
+
+/* Product Page */
+
+img.hero {
+	width: 98.5%;
+}
+
+.divider {
+	border-right: 5px solid #f2a7ad;
+}
+
+img.thumbnail {
+	float: left;
+	margin-top: 0.7em;
+	margin-right: 0.7em;
+	width: 10.2em;
+}
+
+img.thumbnail:last-child {
+	float: left;
+	margin-top: 0.7em;
+	width: 10.5em;
+}
+
+li.thumbnail {
+	float: left;
+	margin-top: 0.7em;
+	margin-right: 0.7em;
+}
+
+li.thumbnail:last-child {
+	float: left;
+	margin-top: 0.7em;
+	width: 10.5em;
+}
+
+img {
+	width: 200px;
+}
+
+/* Checkout */
+
+.display_blocks {
+	background-color: #fff;
+	border-top: 1px solid #eee;
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+	padding: 16px;
+}
+
+._content_1oahw6 {
+	max-width: 640px;
+	margin: 0 auto;
+}
+
+.center {
+	text-align: center;
+}
+
+/* Shopping Cart */
+
+.cart {
+	width: 100%;
+	background-color: #f2f2f2;
+	border-top: 2px solid #f2a7ad;
+	border-bottom: 2px solid #f2a7ad;
+	padding: 10px;
+}
+
+.cart thead {
+	border-top: 2px solid #f2a7ad;
+}
+
+.cart tbody {
+	text-align: center;
+}
+
+.order-summary {
+	width: 100%;
+	background-color: #fff;
+	padding: 10px 20px;
+}
+
+.order-summary .call-to-action {
+	width: 90%;
+	display: inline-block;
+	text-align: center;
+}
+
+/* Bootstrap Override */
+
+.btn-primary:hover,
+.btn-primary {
+	color: #f2778d;
+	background-color: #b3a394;
+	border-color: #b3a394;
+	display: block;
+	padding: 10px 5px;
+	text-align: center;
+	text-decoration: none;
+	width: 200px;
+	border-radius: 8px;
+	margin-left: 20px;
+}
+
+.btn-primary:hover {
+	background-color: #f2778d;
+}
+
+.btn.btn-primary:active {
+	background-color: #f2778d !important;
+}
