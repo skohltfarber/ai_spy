@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import Default from "../layout/default.js";
+import firebase from "../firebase/config";
 
 import * as tf from "@tensorflow/tfjs";
 import * as mobilenet from "@tensorflow-models/mobilenet";
@@ -46,6 +47,29 @@ const IndexPage = () => {
     const results = await model.classify(imageRef.current);
     setResults(results);
 
+    // Store Results and Image
+    saveResults(results);
+  }
+
+  const saveResults = results => {
+
+    const guess = {
+      guess_1: results[0].className,
+      probability_1: results[0].probability,
+      guess_2: results[1].className,
+      probability_2: results[1].probability,
+      guess_3: results[2].className,
+      probability_3: results[2].probability,
+      createdAt: Date.now()
+
+    }
+
+    firebase
+      .firestore()
+      .collection('guess')
+      .add(
+        guess
+      );
   }
 
   const handleOnChange = (e) => {
