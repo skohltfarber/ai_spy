@@ -1,7 +1,8 @@
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 
-// console.log("project variables project id", process.env.FIREBASE_PROJECT_ID)
+console.log("project variables project id", process.env.FIREBASE_PROJECT_ID)
+
 // Your web app's Firebase configuration
 var firebaseConfig = {
     apiKey: process.env.FIREBASE_API_KEY,

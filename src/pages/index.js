@@ -13,10 +13,8 @@ const IndexPage = () => {
   const [model, setModel] = useState(null);
   const [imageURL, setImageURL] = useState(null);
   const [results, setResults] = useState([]);
-  const [history, setHistory] = useState([]);
 
   const imageRef = useRef();
-  const textInputRef = useRef();
   const fileInputRef = useRef();
 
   const loadModel = async () => {
@@ -43,7 +41,6 @@ const IndexPage = () => {
   }
 
   const handlePrediction = async () => {
-    textInputRef.current.value = '';
     const results = await model.classify(imageRef.current);
     setResults(results);
 
@@ -72,13 +69,8 @@ const IndexPage = () => {
       );
   }
 
-  const handleOnChange = (e) => {
-    setImageURL(e.target.value)
-    setResults([])
-
-  }
-
   const handleTriggerUpload = () => {
+    setResults([]);
     fileInputRef.current.click()
   }
 
@@ -86,28 +78,19 @@ const IndexPage = () => {
     loadModel();
   }, []);
 
-  useEffect(() => {
-    if (imageURL) {
-      setHistory([imageURL, ...history]);
-    }
-  }, [imageURL]);
-
   if (isModelLoading) {
     return <h2>Model Loading...</h2>
   }
 
   return (
     <Default> <div className="App">
-      <h1 className="header">Image Identification</h1>
+      <h1 className="header">Let AI Spy on You!!</h1>
       <div className='inputHolder'>
         <input type='file' accept="image/*" capture='camera' className="uploadInput"
           onChange={uploadImage} ref={fileInputRef}
         />
-        <button className="uploadImage" onClick={handleTriggerUpload}>Upload Image</button>
-        <span className="or">OR</span>
-        <input type="text" placeholder="Paste image URL" ref={textInputRef}
-          onChange={handleOnChange}
-        />
+        <button className="uploadImage" onClick={handleTriggerUpload}>Upload Spy Image</button>
+
       </div>
       <div className="mainWrapper">
         <div className="mainContent">
@@ -127,21 +110,9 @@ const IndexPage = () => {
           </div>}
         </div>
         {imageURL && <button className="button" onClick={handlePrediction}>
-          Identify Image
+          AI Spy
         </button>}
       </div>
-      {history.length > 0 && <div className="recentPredictions">
-        <h2>Recent Images</h2>
-        <div className="recentImages">
-          {history.map((image, index) => {
-            return (
-              <div className="recentPrediction" key={`${image}${index}`}>
-                <img src={image} alt="Recent Predictions" onClick={() => setImageURL(image)} />
-              </div>
-            )
-          })}
-        </div>
-      </div>}
     </div></Default>
   )
 }

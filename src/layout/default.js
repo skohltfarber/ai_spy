@@ -4,6 +4,7 @@ import HeaderNav from "../components/mainnav.js";
 import Logo from "../images/logo.png";
 import 'bootstrap/dist/css/bootstrap.css';
 import '../css/style.css';
+import { SocialIcon } from 'react-social-icons';
 
 export default function Default({ children }) {
 
@@ -55,11 +56,13 @@ export default function Default({ children }) {
                         <div className="col-sm-4">
                             <small>&copy; Copyright 2020, Kohltfarber Corporation</small>
                         </div>
-                        <div className="col-sm-6">
-                            <HeaderNav />
+                        <div className="col-sm-3">
+                            &nbsp;
                         </div>
-                        <div className="col-sm-2">
-                            [social icons]
+                        <div className="col-sm-3">
+                            <SocialIcon url="https://www.linkedin.com/in/shawn-kohltfarber-05214998/" className="mr-4" target="_blank" fgColor="#fff" style={{ height: 35, width: 35 }} />
+                            <SocialIcon url="https://github.com/skohltfarber" className="mr-4" target="_blank" fgColor="#fff" style={{ height: 35, width: 35 }} />
+                            <SocialIcon url="https://www.youtube.com/channel/UCM-XhI0K-0CBJv4ZRY9dz9A" className="mr-4" target="_blank" fgColor="#fff" style={{ height: 35, width: 35 }} />
                         </div>
                     </div>
                 </div>
