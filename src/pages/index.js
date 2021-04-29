@@ -89,8 +89,10 @@ const IndexPage = () => {
         <input type='file' accept="image/*" capture='camera' className="uploadInput"
           onChange={uploadImage} ref={fileInputRef}
         />
-        <button className="uploadImage" onClick={handleTriggerUpload}>Upload Spy Image</button>
-
+        <button className="uploadImage" onClick={handleTriggerUpload}>Upload Spy Image</button>&nbsp;&nbsp;
+        {imageURL && <button className="button" onClick={handlePrediction}>
+          AI Spy
+        </button>}
       </div>
       <div className="mainWrapper">
         <div className="mainContent">
@@ -109,9 +111,6 @@ const IndexPage = () => {
             })}
           </div>}
         </div>
-        {imageURL && <button className="button" onClick={handlePrediction}>
-          AI Spy
-        </button>}
       </div>
     </div></Default>
   )
