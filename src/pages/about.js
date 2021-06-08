@@ -6,7 +6,7 @@ export default function About() {
         <Default>
             <h1>About Us</h1>
 
-            <h3>AI Spy: Using AI can determine your images.</h3>
+            <h3>AI Spy: Using AI can determine your images. </h3>
 
             <p>When I was a child, I really loved the Where's Waldo and I Spy Books. We were given an image and a list of things to find. The goal was for us to find those images as quickly as possible. This is my second U of A Global Campus Course. AI Spy was born. I wanted to combine elements of what I learned in the Data Science Certificate with the Front End Development Course.</p>
 
